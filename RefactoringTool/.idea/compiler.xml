@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="smell-detect" />
+        <module name="edrt-common" />
+        <module name="timing" />
+        <module name="data-extract" />
+        <module name="refactoring-recommend" />
+        <module name="refactoring-recommend-model" />
+        <module name="EDRefactoringTool" />
+        <module name="project-manage" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consu" target="11" />
+      <module name="EDRefactoringTool (1)" target="11" />
+      <module name="project" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consu" options="-parameters" />
+      <module name="data-extract" options="-parameters" />
+      <module name="edrt-common" options="-parameters" />
+      <module name="project" options="-parameters" />
+      <module name="project-manage" options="-parameters" />
+      <module name="refactoring-recommend" options="-parameters" />
+      <module name="refactoring-recommend-model" options="-parameters" />
+      <module name="smell-detect" options="-parameters" />
+      <module name="timing" options="-parameters" />
+    </option>
+  </component>
+</project>

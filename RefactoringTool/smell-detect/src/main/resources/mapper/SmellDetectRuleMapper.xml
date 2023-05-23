@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zz.edrt.eddetect.mapper.SmellDetectRuleMapper">
+  <resultMap id="BaseResultMap" type="com.zz.edrt.eddetect.domain.SmellDetectRule">
+    <id column="name" jdbcType="VARCHAR" property="name" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="support_count" jdbcType="INTEGER" property="supportCount" />
+    <result column="confidence" jdbcType="DOUBLE" property="confidence" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from dependency_detect_rule
+    where name = #{name,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zz.edrt.eddetect.domain.SmellDetectRule">
+    insert into dependency_detect_rule (name, url, support_count, 
+      confidence)
+    values (#{name,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{supportCount,jdbcType=INTEGER}, 
+      #{confidence,jdbcType=DOUBLE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zz.edrt.eddetect.domain.SmellDetectRule">
+    update dependency_detect_rule
+    set url = #{url,jdbcType=VARCHAR},
+      support_count = #{supportCount,jdbcType=INTEGER},
+      confidence = #{confidence,jdbcType=DOUBLE}
+    where name = #{name,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select name, url, support_count, confidence
+    from dependency_detect_rule
+    where name = #{name,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select name, url, support_count, confidence
+    from dependency_detect_rule
+  </select>
+</mapper>

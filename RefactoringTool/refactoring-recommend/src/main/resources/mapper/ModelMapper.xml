@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zz.edrt.premodel.mapper.ModelMapper">
+  <resultMap id="BaseResultMap" type="com.zz.edrt.premodel.domain.Model">
+    <id column="title" jdbcType="VARCHAR" property="title" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from model
+    where title = #{title,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zz.edrt.premodel.domain.Model">
+    insert into model (title, description, id, 
+      avatar)
+    values (#{title,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR}, 
+      #{avatar,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zz.edrt.premodel.domain.Model">
+    update model
+    set description = #{description,jdbcType=VARCHAR},
+      id = #{id,jdbcType=VARCHAR},
+      avatar = #{avatar,jdbcType=VARCHAR}
+    where title = #{title,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select title, description, id, avatar
+    from model
+    where title = #{title,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select title, description, id, avatar
+    from model
+  </select>
+</mapper>

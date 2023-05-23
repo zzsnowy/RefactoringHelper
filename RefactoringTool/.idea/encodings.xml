@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/consu/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consu/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-extract/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-extract/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/edrt-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project-manage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/refactoring-recommend-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/refactoring-recommend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/refactoring-recommend/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smell-detect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/project/src/main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/project/src/main/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/timing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/timing/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

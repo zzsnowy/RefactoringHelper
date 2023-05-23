@@ -1,0 +1,1 @@
+git diff --name-only $1 | grep '\.java$'

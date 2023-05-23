@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PostMapping" />
+    </list>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/project/src/main/pom.xml" />
+        <option value="$PROJECT_DIR$/project-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/ed-detect/pom.xml" />
+        <option value="$PROJECT_DIR$/edrt-common/pom.xml" />
+        <option value="$PROJECT_DIR$/data-extract/pom.xml" />
+        <option value="$PROJECT_DIR$/pre-model/pom.xml" />
+        <option value="$PROJECT_DIR$/refactoring-recommend/pom.xml" />
+        <option value="$PROJECT_DIR$/refactoring-recommend-model/pom.xml" />
+        <option value="$PROJECT_DIR$/timing/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="zulu-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
